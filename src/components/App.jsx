@@ -1,18 +1,10 @@
 import { Profiles } from './Profile/Profile';
 import user from '../user.json';
+import { GlobalStyle } from 'GlobalStyle';
 
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101',
-    // }}
-    >
+    <div>
       <Profiles
         username={user.username}
         tag={user.tag}
@@ -20,6 +12,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <GlobalStyle />
     </div>
   );
 };

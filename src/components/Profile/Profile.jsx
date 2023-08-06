@@ -7,7 +7,7 @@ export const Profiles = ({ username, tag, location, avatar, stats }) => {
         <img
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
           alt="User avatar"
-          width={30}
+          width={50}
         />
         <p>{username}</p>
         <p>{tag}</p>
