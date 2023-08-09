@@ -1,6 +1,8 @@
+import { Listtran } from './TransactionHistory.styled';
+
 export const Transaction = ({ datas }) => {
   return (
-    <ul>
+    <Listtran>
       {datas.map(data => (
         <table>
           <thead>
@@ -20,6 +22,6 @@ export const Transaction = ({ datas }) => {
           </tbody>
         </table>
       ))}
-    </ul>
+    </Listtran>
   );
 };
