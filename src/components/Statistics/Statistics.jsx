@@ -2,14 +2,14 @@ import { StatList } from './Statistics.styled';
 
 export const Statistics = ({ stats }) => {
   return (
-    <StatList class="statistics">
-      <h2 class="title">Upload stats</h2>
+    <StatList>
+      <h2>Upload stats</h2>
 
-      <ul class="stat-list">
+      <ul>
         {stats.map(stat => (
-          <li class="item" key={stat.id}>
-            <span class="label"> {stat.label} </span>
-            <span class="percentage"> {stat.percentage} % </span>
+          <li key={stat.id}>
+            <span> {stat.label} </span>
+            <span> {stat.percentage} % </span>
           </li>
         ))}
       </ul>
